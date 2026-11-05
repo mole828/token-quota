@@ -1,0 +1,4 @@
+{"timestamp":"2026-11-05T07:00:00.000Z","type":"session_meta","payload":{"id":"x"}}
+{"timestamp":"2026-11-05T07:10:00.000Z","type":"event_msg","payload":{"type":"token_count","info":null,"rate_limits":{"limit_id":"codex","primary":{"used_percent":5.0,"window_minutes":300,"resets_at":1793881116},"secondary":{"used_percent":57.0,"window_minutes":10080,"resets_at":1793933131},"credits":{"has_credits":false,"unlimited":false,"balance":"0"},"plan_type":"plus"}}}
+{"timestamp":"2026-11-05T07:19:22.893Z","type":"event_msg","payload":{"type":"token_count","info":null,"rate_limits":{"limit_id":"codex","primary":{"used_percent":9.0,"window_minutes":300,"resets_at":1793881116},"secondary":{"used_percent":58.0,"window_minutes":10080,"resets_at":1793933131},"credits":{"has_credits":false,"unlimited":false,"balance":"0"},"plan_type":"plus"}}}
+{"timestamp":"2026-11-05T07:20:00.000Z","type":"response_item","payload":{"type":"message"}}

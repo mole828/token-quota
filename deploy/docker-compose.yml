@@ -1,0 +1,20 @@
+# 部署在 mc：~/token-quota。Caddy（index 项目里的 web 容器）通过 index_default 网络反代 token-quota:8787。
+services:
+  token-quota:
+    build: .
+    image: token-quota:local
+    container_name: token-quota
+    restart: unless-stopped
+    user: "1002:1003"
+    env_file: .env          # TQ_TOKENS=<逗号分隔的令牌>，权限 600
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./data:/data
+    networks:
+      - index_default
+    mem_limit: 64m
+
+networks:
+  index_default:
+    external: true

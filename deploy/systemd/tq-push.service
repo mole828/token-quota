@@ -1,0 +1,7 @@
+[Unit]
+Description=Push Token Quota snapshots to the report server
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/tq push
